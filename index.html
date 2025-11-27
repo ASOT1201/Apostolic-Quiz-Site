@@ -1,68 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Apostolic School of Theology – Online Campus</title>
-  <link rel="stylesheet" href="assets/main.css">
+
+  <!-- Optional stylesheet (you may create this later) -->
+  <link rel="stylesheet" href="assets/styles.css">
+  
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #111;
+      color: #fff;
+    }
+    header {
+      background: #000;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 2px solid #c00;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 32px;
+      letter-spacing: 1px;
+    }
+    .nav {
+      margin-top: 10px;
+    }
+    .nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+      border: 1px solid #c00;
+      border-radius: 4px;
+      margin: 0 5px;
+    }
+    .nav a:hover {
+      background: #c00;
+    }
+    .container {
+      width: 90%;
+      max-width: 900px;
+      margin: 40px auto;
+      text-align: center;
+    }
+    h2 {
+      color: #c00;
+      margin-bottom: 20px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      font-size: 20px;
+    }
+    ul li { margin: 12px 0; }
+    ul li a { color: #0af; text-decoration: none; }
+    ul li a:hover { text-decoration: underline; }
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      text-align: center;
+      background: #000;
+      border-top: 2px solid #c00;
+    }
+  </style>
 </head>
+
 <body>
 
-<header class="site-header">
-  <div class="container header-inner">
-    <div class="branding">
-      <div class="logo-mark">ASOT</div>
-      <div class="brand-text">
-        <div class="brand-name">Apostolic School of Theology</div>
-        <div class="brand-subtitle">Online Learning Portal</div>
-      </div>
-    </div>
-    <nav class="main-nav">
-      <a href="index.html" class="active">Home</a>
-      <a href="hermeneutics/">Hermeneutics Campus</a>
-      <a href="quizzes/">Quizzes</a>
-    </nav>
+<header>
+  <h1>Apostolic School of Theology</h1>
+  <div class="nav">
+    <a href="index.html">Home</a>
+    <a href="hermeneutics/">Hermeneutics Campus</a>
+    <a href="quizzes/">Quiz Center</a>
   </div>
 </header>
 
-<section class="hero">
-  <div class="container hero-inner">
-    <div class="hero-text">
-      <h1>Welcome to the Apostolic School of Theology</h1>
-      <p class="hero-tagline">
-        A world-class Apostolic / Oneness theological training center powered by AI teaching tools,
-        ministerial resources, doctrinal courses, quizzes, and complete minister development.
-      </p>
-      <div class="hero-actions">
-        <a href="hermeneutics/" class="btn-primary">Enter Hermeneutics Campus</a>
-        <a href="quizzes/" class="btn-outline">View Quizzes</a>
-      </div>
-    </div>
-  </div>
-</section>
+<div class="container">
+  <h2>Welcome to the Online Campus</h2>
+  <p>
+    Explore Apostolic theology, doctrinal studies, ministerial training, and fully interactive student quizzes.
+  </p>
 
-<section class="section">
-  <div class="container">
-    <h2>Courses Available</h2>
-    <ul>
-      <li><a href="hermeneutics/">Principles of Biblical Interpretation / Hermeneutics</a></li>
-      <li>Doctrine of Salvation</li>
-      <li>The Foundations of Faith</li>
-      <li>The Doctrine of Repentance</li>
-      <li>The Doctrines of Baptisms</li>
-      <li>The Name of Jesus</li>
-    </ul>
-  </div>
-</section>
+  <h2>Courses Available</h2>
+  <ul>
+    <li><a href="hermeneutics/">▶ Principles of Biblical Interpretation / Hermeneutics</a></li>
+    <li>Doctrine of Salvation</li>
+    <li>The Foundations of Faith</li>
+    <li>The Doctrine of Repentance</li>
+    <li>The Doctrines of Baptisms</li>
+    <li>The Name of Jesus</li>
+  </ul>
 
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <p>&copy; <span id="year"></span> Apostolic School of Theology – All Rights Reserved</p>
-  </div>
+  <h2>Student Quiz Center</h2>
+  <ul>
+    <li><a href="quizzes/intro-apostolic-theology-01.html">Intro to Apostolic Theology Quiz</a></li>
+    <li><a href="quizzes/mystery-of-godliness-01.html">Mystery of Godliness Quiz</a></li>
+  </ul>
+</div>
+
+<footer>
+  &copy; <span id="year"></span> Apostolic School of Theology – All Rights Reserved
 </footer>
 
 <script>
-  document.getElementById('year').textContent = new Date().getFullYear();
+  document.getElementById("year").textContent = new Date().getFullYear();
 </script>
 
 </body>
 </html>
+
